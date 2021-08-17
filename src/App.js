@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "Smiling Face",
-  "😉": "Winking Face",
-  "😟": "Worried Face",
-  "🎅": "Santa Claus",
-  "😴": "Sleeping Face",
-  "👍": "Thumbs Up",
-  "👏": "Clapping Hands"
+  "🍇": "Grapes",
+  "🍉": "Watermelon",
+  "🍋": "Lemon",
+  "🍌": "Banana",
+  "🍍": "Pineapple",
+  "🥭": "Mango",
+  "🍎": "Red Apple",
+  "🍏": "Green Apple",
+  "🍐": "Pear",
+  "🍑": "Peach",
+  "🍒": "Cherries",
+  "🍓": "Strawberry"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -47,7 +52,9 @@ export default function App() {
         style={{ width: "10rem", border: "3px solid ", height: "5vh" }}
       />
       <h2 style={{ color: "purple" }}>{meaning}</h2>
-      <h3>Emojis that we know, Click on them to know their meaning 👇 </h3>
+      <h3>
+        Emojis that we know, Click on them to know their meaning <span>👇</span>{" "}
+      </h3>
 
       {emojisWeKnow.map((emoji) => {
         return (
